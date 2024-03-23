@@ -1,0 +1,233 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background-image: url(Senja.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container img {
+    filter: brightness(200%);
+    width: 600px;
+    height: 300px;
+}
+
+.container h1,
+.p1 {
+    filter: brightness(200%);
+}
+
+.content-below-fixed {
+    padding-top: 15rem;
+    padding-left: 5rem;
+}
+
+.btn-warning {
+    background-color: #fca01a !important;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tentang-kajii {
+    background-image: url(Senja-3.png);
+    background-size: cover;
+    background-position: 60% 40%;
+    height: 50vh;
+}
+
+.tentang-kajii h1 {
+    padding-top: 9rem;
+}
+
+.sejarah-tema {
+    background-image: url(bckground3.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.sejarah-tema h1{
+    padding-top: 9rem;
+    margin-left: 10rem;
+    font-size: 70px;
+    margin-bottom: 25px;
+}
+
+.sejarah-tema span{
+    color: #fca01a ;
+}
+
+.sejarah-tema p{
+    width: 800px;
+    font-size: 20px;
+    margin-left: 10rem;
+}
+
+.tahun {
+    margin-left: 10rem;
+}
+
+.tahun .desk1 h3 {
+    font-size: 50px;
+}
+
+.tahun .deskripsi {
+    font-size: 25px;
+    padding-top: 28px;
+}
+.tahun .garis{
+    padding-top: 21px;
+}
+
+.tahun .desk2 {
+    margin-left: 100px;
+}
+
+.tahun .desk2 h3 {
+    font-size: 50px;
+}
+
+.tahun .deskripsi1 {
+    font-size: 25px;
+    padding-top: 10px;
+}
+
+.atraksi {
+    background-image: url(Senja5.png);
+    background-size: cover;
+    background-position: center;
+    height: 120vh;
+}
+
+.atraksi .judul {
+    padding-top: 18rem;
+}
+
+.atraksi h1 span {
+    color: #fca01a !important;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        background-size: none;
+        height: 100vh;
+        background-position: 65% 40%;
+    }
+
+    .content-below-fixed {
+        padding-top: 9rem;
+        padding-left: 1rem;
+    }
+
+    .text {
+        margin-top: 50px;
+    }
+
+    .text h1 {
+        text-align: center;
+    }
+
+    .text .p1 {
+        text-align: center;
+    }
+
+    .container img {
+        width: 500px;
+        height: 300px;
+    }
+
+    .btn-warning {
+        margin-left: 13rem;
+    }
+    .tentang-kajii h1 {
+        padding-top: 10rem;
+    }
+    .sejarah-tema {
+        background-size: none;
+        height: 120vh;
+        background-position: 60% 40%;
+    }
+
+    .sejarah-tema h1{
+        padding-top: 9rem;
+        margin-left: 4rem;
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .sejarah-tema p{
+        width: 500px;
+        font-size: 20px;
+        margin-left: 4rem;
+    }
+
+    .tahun {
+        margin-left: 4rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero {
+        background-size: none;
+        height: 120vh;
+        background-position: 65% 40%;
+    }
+
+    .content-below-fixed {
+        padding-top: 9rem;
+    }
+
+    .text {
+        margin-top: 50px;
+    }
+
+    .text h1 {
+        text-align: center;
+        margin-right: 3rem;
+    }
+
+    .text .p1 {
+        text-align: center;
+        margin-right: 2rem;
+    }
+
+    .container img {
+        width: 500px;
+        height: 300px;
+        margin-left: 3rem;
+    }
+    .btn-warning {
+        margin-left: 17rem;
+    }
+
+    .sejarah-tema {
+        background-size: none;
+        height: 110vh;
+        background-position: 60% 40%;
+    }
+
+    .sejarah-tema h1{
+        padding-top: 9rem;
+        margin-left: 5rem;
+        font-size: 50px;
+        margin-bottom: 25px;
+    }
+
+    .sejarah-tema p{
+        width: 600px;
+        font-size: 20px;
+        margin-left: 5rem;
+    }
+
+    .tahun {
+        margin-left: 5rem;
+    }
+}
+
