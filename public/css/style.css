@@ -1,19 +1,19 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
+    font-family: "Jost", sans-serif;
 }
+
 
 .hero {
     background-image: url(Senja.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-}
 
-.container img {
-    filter: brightness(200%);
-    width: 600px;
-    height: 300px;
 }
 
 .container h1,
@@ -26,12 +26,14 @@ html {
     padding-left: 5rem;
 }
 
+.container img {
+    width: 550px;
+    height: 300px;
+}
+
 .btn-warning {
     background-color: #fca01a !important;
-    width: 100px;
-    height: 35px;
-    border-radius: 10px;
-    font-weight: bold;
+    width: 150px;
 }
 
 .tentang-kajii {
@@ -51,18 +53,18 @@ html {
     height: 100vh;
 }
 
-.sejarah-tema h1{
-    padding-top: 9rem;
+.sejarah-tema h1 {
+    padding-top: 10rem;
     margin-left: 10rem;
     font-size: 70px;
     margin-bottom: 25px;
 }
 
-.sejarah-tema span{
-    color: #fca01a ;
+.sejarah-tema span {
+    color: #fca01a;
 }
 
-.sejarah-tema p{
+.sejarah-tema p {
     width: 800px;
     font-size: 20px;
     margin-left: 10rem;
@@ -80,7 +82,7 @@ html {
     font-size: 25px;
     padding-top: 28px;
 }
-.tahun .garis{
+.tahun .garis {
     padding-top: 21px;
 }
 
@@ -97,32 +99,353 @@ html {
     padding-top: 10px;
 }
 
-.atraksi {
+#atraksi {
     background-image: url(Senja5.png);
     background-size: cover;
     background-position: center;
-    height: 120vh;
 }
 
-.atraksi .judul {
-    padding-top: 18rem;
+#atraksi .judul {
+    padding-top: 10rem;
+    margin-bottom: 40px;
 }
 
-.atraksi h1 span {
+#atraksi h1 span {
     color: #fca01a !important;
 }
 
+.container-atraksi {
+    width: 80%;
+    margin-left: 9rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.container-atraksi card {
+    width: 18rem;
+}
+
+.content-below-fixed1 {
+    padding-top: 8rem;
+}
+
+.content-below-fixed1 h1 {
+    margin-bottom: 40px;
+    padding-top: 30px;
+}
+
+.content-left-fixed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 {
+    width: 70%;
+    margin-left: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.container-paket {
+    background-image: url(bg-mas.jpg);
+    background-size: cover;
+    background-position: 65% 35%;
+    padding-bottom: 2rem;
+}
+
+.container-paket .card {
+    width: 19rem;
+    border-radius: 20px;
+}
+
+.container-paket .items img {
+    border-radius: 20px;
+}
+
+.container-paket .items .btn-warning {
+    width: 160px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.container-paket .items .card-text {
+    font-size: 18px;
+}
+
+.container-paket .items .card-text .harga {
+    font-size: 20px;
+}
+
+.container-paket .items .fasilitas {
+    margin-left: 3rem;
+    font-size: 19px;
+}
+
+.container-paket .items .btn-success {
+    background-color: #2bf633 !important;
+    border: 0px;
+    width: 50%;
+    font-size: 15px;
+}
+
+.container-paket .items .btn-success img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.content-below-fixed2 {
+    padding-top: 11rem;
+    background-image: url(background-katalog.jpg);
+    background-size: cover;
+}
+
+.content-ikan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.image {
+    width: 400px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.wrapper .image img {
+    width: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.wrapper .content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.wrapper .content:hover {
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.wrapper .content h1 {
+    color: white;
+    font-size: 30px;
+}
+
+.selengkapnya {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.selengkapnya .btn-warning {
+    padding: 10px;
+    width: auto;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.content-below-fixed3 {
+    padding-top: 11rem;
+    background-image: url(HS-platy1.jpg);
+    background-size: cover;
+    background-position: 65% 35%;
+    padding-bottom: 2rem;
+}
+
+.content-homestay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+
+.fixed-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-homestay .card {
+    width: 20rem;
+}
+
+.content-homestay .reservasi{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.content .items .btn-success {
+    background-color: #2bf633 !important;
+    border: 0px;
+    width: 50%;
+    font-size: 12px;
+}
 
 
-@media (min-width: 320px) and (max-width: 767px) {
+.content-homestay .items .btn-success img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.content-homestay .items .card .img-homestay img {
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.content-homestay .items .card-body .card-title {
+    font-size: 20px;
+}
+
+.content-homestay .items .card-body span {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.content-homestay .items .card-body .fasilitas {
+    margin-left: 12px;
+}
+
+
+footer {
+    background-color: #201e1e;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+footer .container {
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+footer .logo-footer img {
+    width: 200px;
+    height: 200px;
+}
+
+.media-sosial {
+    display: flex;
+    margin-left: 30px;
+    gap: 10px; /* Sesuaikan jarak antar ikon */
+}
+
+.ikon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Sesuaikan ukuran */
+    height: 40px; /* Sesuaikan ukuran */
+    border-radius: 50%;
+    background-color: #f0f0f0; /* Sesuaikan warna latar belakang */
+    color: #000; /* Sesuaikan warna ikon */
+    text-decoration: none;
+    font-size: 20px; /* Sesuaikan ukuran ikon */
+}
+
+.ikon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: #fff;
+}
+
+.ikon.instagram svg {
+    width: 50%;
+    height: 50%;
+}
+
+.ikon.facebook {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.ikon.facebook svg {
+    width: 50%;
+    height: 50%;
+}
+
+.ikon.youtube {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+.ikon.youtube svg {
+    width: 50%;
+    height: 50%;
+}
+
+.ikon:hover {
+   opacity:0.8;
+}
+
+footer .kontak h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+}
+
+footer .email h3 {
+    margin-top: 25px;
+    font-size: 23px;
+}
+footer .nomer h3 {
+    margin-top: 25px;
+    font-size: 23px;
+}
+
+footer .lokasi h2 {
+    margin-top: 2rem;
+    font-size: 30px;
+}
+footer .alamat h3 {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+footer .copyright {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
     .hero {
         background-size: none;
-        height: 100vh;
+        height: 130vh;
         background-position: 65% 40%;
     }
 
     .content-below-fixed {
-        padding-top: 9rem;
+        padding-top: 12rem;
         padding-left: 1rem;
     }
 
@@ -144,44 +467,270 @@ html {
     }
 
     .btn-warning {
-        margin-left: 13rem;
+        margin-left: 11rem;
     }
     .tentang-kajii h1 {
-        padding-top: 10rem;
+        padding-top: 9rem;
     }
+
     .sejarah-tema {
         background-size: none;
-        height: 120vh;
+        height: 150vh;
         background-position: 60% 40%;
     }
 
-    .sejarah-tema h1{
-        padding-top: 9rem;
-        margin-left: 4rem;
+    .sejarah-tema h1 {
+        padding-top: 11rem;
+        margin-left: 3rem;
         font-size: 50px;
         margin-bottom: 25px;
     }
 
-    .sejarah-tema p{
+    .sejarah-tema p {
         width: 500px;
         font-size: 20px;
-        margin-left: 4rem;
+        margin-left: 3rem;
     }
 
     .tahun {
+        margin-left: 3rem;
+    }
+
+    #atraksi {
+        background-image: url(Senja5.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #atraksi .judul {
+        padding-top: 11rem;
+        margin-bottom: 40px;
+    }
+
+    #atraksi h1 span {
+        color: #fca01a !important;
+    }
+
+    .container-atraksi {
         margin-left: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 40px;
+    }
+
+    .content-left-fixed {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container1 {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .container-paket .card {
+        width: 15rem;
+        border-radius: 20px;
+    }
+
+    .container-paket {
+        background-image: url(bg-mas.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+
+    .container-paket .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .container-paket .items .card-text {
+        font-size: 17px;
+    }
+
+    .container-paket .items .card-text .harga {
+        font-size: 18px;
+    }
+
+    .container-paket .items .fasilitas {
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+
+    .content-below-fixed2 {
+        padding-top: 11rem;
+        background-image: url(background-katalog.jpg);
+        background-size: cover;
+    }
+    
+    .content-ikan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    
+    .image {
+        width: 250px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .wrapper .image img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    
+    .wrapper .content:hover {
+        opacity: 1;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content h1 {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .selengkapnya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .selengkapnya .btn-warning {
+        padding: 10px;
+        width: auto;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .content-below-fixed3 {
+        padding-top: 11rem;
+        background-image: url(HS-platy1.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+    
+    .content-homestay {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        margin-top: 20px;
+    }
+    
+    .fixed-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-homestay .card {
+        width: 14rem;
+    }
+    
+    .content-homestay .reservasi{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 175px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .content .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 50%;
+        font-size: 12px;
+    }
+    
+    .content-homestay .items .btn-success img {
+        width: 13px;
+        height: 13px;
+        margin-right: 8px;
+    }
+    
+    .content-homestay .items .card .img-homestay img {
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .content-homestay .items .card-body .card-title {
+        font-size: 13px;
+    }
+    
+    .content-homestay .items .card-body span {
+        font-size: 10px;
+        padding-left: 15px;
+    }
+    
+    .content-homestay .items .card-body .fasilitas {
+        font-size: 15px;
+        margin-left: 12px;
+    }
+
+    footer .container {
+        display: grid;
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    footer .logo-footer img {
+        width: 200px;
+        height: 200px;
+        margin-left: 5.5rem;
+    }
+
+    footer .media-sosial {
+        margin-left: 117px;
     }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     .hero {
         background-size: none;
-        height: 120vh;
+        height: 140vh;
         background-position: 65% 40%;
     }
 
     .content-below-fixed {
-        padding-top: 9rem;
+        padding-top: 11rem;
     }
 
     .text {
@@ -204,23 +753,23 @@ html {
         margin-left: 3rem;
     }
     .btn-warning {
-        margin-left: 17rem;
+        margin-left: 15rem;
     }
 
     .sejarah-tema {
         background-size: none;
-        height: 110vh;
+        height: 140vh;
         background-position: 60% 40%;
     }
 
-    .sejarah-tema h1{
-        padding-top: 9rem;
+    .sejarah-tema h1 {
+        padding-top: 11rem;
         margin-left: 5rem;
         font-size: 50px;
         margin-bottom: 25px;
     }
 
-    .sejarah-tema p{
+    .sejarah-tema p {
         width: 600px;
         font-size: 20px;
         margin-left: 5rem;
@@ -229,5 +778,409 @@ html {
     .tahun {
         margin-left: 5rem;
     }
+
+    #atraksi {
+        background-image: url(Senja5.png);
+        background-size: cover;
+        background-position: center;
+    }
+
+    #atraksi .judul {
+        padding-top: 11rem;
+        margin-bottom: 40px;
+    }
+
+    #atraksi h1 span {
+        color: #fca01a !important;
+    }
+
+    .container-atraksi {
+        width: 95%;
+        margin-left: 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-gap: 40px;
+    }
+
+    .atraksi-2 {
+        background-image: url(PasarSore.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 170vh;
+    }
+
+    .container1 {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .container-paket .card {
+        width: 13rem;
+        border-radius: 20px;
+    }
+
+    .container-paket {
+        background-image: url(bg-mas.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+
+    .container-paket .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .container-paket .items .card-text {
+        font-size: 15px;
+    }
+
+    .container-paket .items .card-text .harga {
+        font-size: 15px;
+    }
+
+    .container-paket .items .fasilitas {
+        margin-left: 2rem;
+        font-size: 15px;
+    }
+
+    .content-below-fixed2 {
+        padding-top: 11rem;
+        background-image: url(background-katalog.jpg);
+        background-size: cover;
+    }
+    
+    .content-ikan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    
+    .image {
+        width: 350px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .wrapper .image img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    
+    .wrapper .content:hover {
+        opacity: 1;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content h1 {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .selengkapnya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 65%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .selengkapnya .btn-warning {
+        padding: 10px;
+        width: auto;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .content-below-fixed3 {
+        padding-top: 11rem;
+        background-image: url(HS-platy1.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+    
+    .content-homestay {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+        margin-top: 20px;
+    }
+    
+    .fixed-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-homestay .card {
+        width: 20rem;
+    }
+    
+    .content-homestay .reservasi{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 150px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .content .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 50%;
+        font-size: 12px;
+    }
+    
+    
+    .content-homestay .items .btn-success img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    
+    .content-homestay .items .card .img-homestay img {
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .content-homestay .items .card-body .card-title {
+        font-size: 20px;
+    }
+    
+    .content-homestay .items .card-body span {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .content-homestay .items .card-body .fasilitas {
+        margin-left: 12px;
+    }
+footer .container {
+        display: grid;
+        width: 60%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 40px;
+    }
+
+    footer .logo-footer img {
+        width: 200px;
+        height: 200px;
+        margin-left: 5.5rem;
+    }
+
+    footer .media-sosial {
+        margin-left: 117px;
+    }
 }
 
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container1 {
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .container-paket .card {
+        width: 16rem;
+        border-radius: 20px;
+    }
+
+    .container-paket {
+        background-image: url(bg-mas.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+
+    .container-paket .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .container-paket .items .card-text {
+        font-size: 16px;
+    }
+
+    .container-paket .items .card-text .harga {
+        font-size: 16px;
+    }
+
+    .container-paket .items .fasilitas {
+        margin-left: 2rem;
+        font-size: 16px;
+    }
+
+    .content-below-fixed2 {
+        padding-top: 11rem;
+        background-image: url(background-katalog.jpg);
+        background-size: cover;
+    }
+    
+    .content-ikan {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .wrapper {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+    }
+    
+    .image {
+        width: 300px;
+        position: relative;
+        border-radius: 10px;
+    }
+    
+    .wrapper .image img {
+        width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: 0.6s;
+    }
+    
+    .wrapper .content:hover {
+        opacity: 1;
+        border-radius: 10px;
+    }
+    
+    .wrapper .content h1 {
+        color: white;
+        font-size: 30px;
+    }
+    
+    .selengkapnya {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    
+    .selengkapnya .btn-warning {
+        padding: 10px;
+        width: auto;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    .content-below-fixed3 {
+        padding-top: 11rem;
+        background-image: url(HS-platy1.jpg);
+        background-size: cover;
+        background-position: 65% 35%;
+        padding-bottom: 2rem;
+    }
+    
+    .content-homestay {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        margin-top: 20px;
+    }
+    
+    .fixed-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content-homestay .card {
+        width: 17rem;
+    }
+    
+    .content-homestay .reservasi{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .content .items .btn-success {
+        background-color: #2bf633 !important;
+        border: 0px;
+        width: 50%;
+        font-size: 12px;
+    }
+    
+    
+    .content-homestay .items .btn-success img {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+    }
+    
+    .content-homestay .items .card .img-homestay img {
+        padding: 5px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .content-homestay .items .card-body .card-title {
+        font-size: 20px;
+    }
+    
+    .content-homestay .items .card-body span {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+    
+    .content-homestay .items .card-body .fasilitas {
+        margin-left: 12px;
+    }
+}

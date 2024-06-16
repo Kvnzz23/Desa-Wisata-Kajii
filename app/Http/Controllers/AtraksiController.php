@@ -13,7 +13,7 @@ class AtraksiController extends Controller
     public function index()
     {
         $data_atraksi = Atraksi::all();
-        return view('/', compact('data_atraksi'));
+        return view('welcome', compact('data_atraksi'));
     }
 
     /**
@@ -63,4 +63,6 @@ class AtraksiController extends Controller
     {
         //
     }
+
+
 }

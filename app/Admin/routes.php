@@ -1,5 +1,7 @@
 <?php
 
+use App\Admin\Controllers\FarmController;
+use App\Admin\Controllers\HomestayController;
 use Illuminate\Routing\Router;
 
 Admin::routes();
@@ -14,4 +16,7 @@ Route::group([
     $router->get('/', 'HomeController@index')->name('home');
 
     $router->resource('atraksis', AtraksiController::class);
+    $router->resource('pakets', PaketController::class);
+    $router->resource('ikans', IkanController::class);
+    $router->resource('homestays', HomestayController::class);
 });
